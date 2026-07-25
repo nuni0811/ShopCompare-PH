@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tl-PH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopCompare PH — Ihambing ang presyo mula Shopee, Lazada at TikTok Shop. Makatipid sa pinakamababang presyo.">
+    <meta name="keywords" content="presyo, paghambing, shopee, lazada, tiktok shop, pinakamurang presyo">
+    <meta name="author" content="ShopCompare PH">
+    <meta name="theme-color" content="#2563EB">
+    <title>ShopCompare PH — Ihambing ang Presyo. Makatipid.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="container">
+        <a href="#" class="logo">🛒 ShopCompare PH</a>
+        <nav class="nav-desktop">
+            <a href="#">Home</a>
+            <a href="#">Kategorya</a>
+            <a href="#">Paborito</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Dark Mode">🌙</button>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+        <a href="#">Home</a>
+        <a href="#">Kategorya</a>
+        <a href="#">Paborito</a>
+        <button class="theme-toggle" id="themeToggle2">🌙 Dark Mode</button>
+    </div>
+</header>
+
+<!-- ===== SEARCH SECTION ===== -->
+<section class="search-section">
+    <div class="container">
+        <h1 class="hero-title">Ihambing ang Presyo. Makatipid.</h1>
+        <p class="hero-subtitle">Hanapin ang pinakamababang presyo mula Shopee, Lazada at TikTok Shop.</p>
+        <form class="search-box" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Maghanap ng produkto..." autocomplete="off">
+            <button type="submit">🔍 Hanapin</button>
+        </form>
+        <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Kategorya</h2>
+        <div class="categories" id="categories">
+            <button class="category-chip active" data-cat="all">Lahat</button>
+            <button class="category-chip" data-cat="phones">📱 Cellphone</button>
+            <button class="category-chip" data-cat="laptops">💻 Laptop</button>
+            <button class="category-chip" data-cat="audio">🎧 Audio</button>
+            <button class="category-chip" data-cat="power">🔋 Power Bank</button>
+            <button class="category-chip" data-cat="watch">⌚ Smart Watch</button>
+            <button class="category-chip" data-cat="appliances">🏠 Gamit Bahay</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCTS GRID ===== -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">🔥 Mga Sikat na Produkto</h2>
+        <div class="products-grid" id="productsGrid"></div>
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <div class="empty-icon">🔍</div>
+            <h3>Walang nakitang produkto</h3>
+            <p>Subukang gumamit ng ibang salita sa paghahanap</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COMPARE MODAL ===== -->
+<div class="modal-overlay" id="compareModal" role="dialog" aria-modal="true">
+    <div class="modal">
+        <div class="modal-header">
+            <h3 id="modalTitle">Paghambingin ang Presyo</h3>
+            <button class="modal-close" id="modalClose" aria-label="Isara">✕</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <p><strong>ShopCompare PH</strong> — Ihambing ang Presyo. Makatipid.</p>
+        <p>Data mula sa Shopee, Lazada at TikTok Shop. Hindi kami nagbebenta ng produkto.</p>
+        <p>© 2026 ShopCompare PH. Lahat ng karapatang nakareserba.</p>
+    </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
